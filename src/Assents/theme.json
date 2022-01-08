@@ -1,0 +1,13 @@
+{
+    "colors":{
+        "white": "#FFF",
+        "dark": "#000",
+        "blue" : "#0c285b",
+        "blueescure" : "#152b54",
+        "violet": "#18103d",
+        "transparent" : "transparent",
+        "blueclare" : "#6746ff",
+        "danger" : "#ff1938",
+        "gray" : "#c4c4c4"
+    }
+}

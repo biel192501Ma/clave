@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="200" viewBox="0 0 1920 200">
+    <defs>
+        <linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0b274e"/>
+            <stop offset="1" stop-color="#0b274e" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <path data-name="Retângulo 91" style="fill:url(#a)" d="M0 0h1920v200H0z"/>
+</svg>
