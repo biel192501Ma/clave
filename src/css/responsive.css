@@ -81,7 +81,7 @@
     color: white;
     font-size: 12px;
   padding: 2px;
-  justify-content: start !important;
+  
  
 }
 .input3:placeholder-shown{
@@ -1303,7 +1303,7 @@ width: 70px !important;
       padding: 2px;
     }
     .input3:placeholder-shown{
-       text-justify:initial!important;
+       text-align: center !important;
      
     }
 

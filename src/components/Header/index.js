@@ -74,7 +74,7 @@ const Header = () =>{
                    <input type='email' required className='input2' placeholder='Seu melhor email'  name="email"  />
                    </Box>
                    <Box width={400}  paddingTop={10} className='boxinput3' >
-                   <input required className='input3' placeholder='Seu melhor email'  />
+                   <input required className='input3' placeholder='Digite sua mensagem'  />
                    </Box>
            </Box>
            <Space/>
