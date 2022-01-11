@@ -5,6 +5,9 @@ import prof1 from '../Assents/prof1.png'
 import prof2 from '../Assents/prof2.jpg'
 import direitora from '../Assents/direitora.jpg'
 import bg4 from '../Assents/bg4.jpg'
+import doisestudantes from '../Assents/doisestudantes.jpg'
+import crianca from '../Assents/crianca.jpg'
+import mulher from '../Assents/mulher.jpg'
 
 
 export  const Container = styled.div`
@@ -57,6 +60,7 @@ background-image: url(${direitora}) ;
  background-size: cover;
 
 `;
+
 export const Bgimg3= styled.div`
  padding-left: ${({paddingLeft}) =>  paddingLeft ? paddingLeft : 0  }px;
  margin-left: ${({left}) =>  left ? left : 0  }%;
@@ -77,6 +81,42 @@ export const Bgimg4= styled.div`
  height :${({height}) =>  height ? height : 'auto'   }px;
  margin-top: ${({top}) =>  top ? top : 0  }%;
 background-image: url(${bg4}) ;
+ background-size: cover;
+
+`;
+
+export const Bgimg5= styled.div`
+ padding-left: ${({paddingLeft}) =>  paddingLeft ? paddingLeft : 0  }px;
+ margin-left: ${({left}) =>  left ? left : 0  }%;
+
+ width :${({width}) =>  width ? width : 'auto'   }px;
+ height :${({height}) =>  height ? height : 'auto'   }px;
+ margin-top: ${({top}) =>  top ? top : 0  }%;
+background-image: url(${doisestudantes}) ;
+ background-size: cover ;
+
+`;
+
+export const Bgimg6= styled.div`
+ padding-left: ${({paddingLeft}) =>  paddingLeft ? paddingLeft : 0  }px;
+ margin-left: ${({left}) =>  left ? left : 0  }%;
+
+ width :${({width}) =>  width ? width : 'auto'   }px;
+ height :${({height}) =>  height ? height : 'auto'   }px;
+ margin-top: ${({top}) =>  top ? top : 0  }%;
+background-image: url(${crianca}) ;
+ background-size: cover;
+
+`;
+
+export const Bgimg7= styled.div`
+ padding-left: ${({paddingLeft}) =>  paddingLeft ? paddingLeft : 0  }px;
+ margin-left: 0%;
+
+ width :${({width}) =>  width ? width : 'auto'   }px;
+ height :${({height}) =>  height ? height : 'auto'   }px;
+ margin-top: ${({top}) =>  top ? top : 0  }%;
+background-image: url(${mulher}) ;
  background-size: cover;
 
 `;
@@ -131,7 +171,7 @@ export const SubTitle = styled.h5`
  padding-right: ${({paddingRight}) =>  paddingRight ? paddingRight : 0  }px;
  font-weight: ${({bold}) =>  bold ? 'bold' : 'lighter'  };
  width :${({width}) =>  width ? width : 'auto'   }px;
-opacity: 0.5;
+opacity: ${({opacity}) =>  opacity ? opacity : 0.5 };
 color:${({color}) => theme.colors[color || 'white']  };
 font-size:${({size}) =>  size ? size : ''   }px; 
 font-family:'Ubuntu ', Arial ;

@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Ubuntu:wght@400;700&display=swap');
 
+@font-face{
+    font-family: 'Gotham-medium';
+    src: url("../Assents/Gotham\ Medium\ Regular.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'Gotham-book';
+    src: url("../Assents/Gotham\ Book\ Regular.otf") format('truetype');
+}
+@font-face{
+    font-family: 'Gotham-ligth';
+    src: url("../Assents/Gotham\ Light.otf") format('opentype');
+    font-weight: lighter !important;
+}
+@font-face{
+    font-family: 'Segoe-light';
+    src: url("../Assents/segoe-ui-light-2.ttf") format('truetype');
+}
+@font-face{
+    font-family: 'Gotham-bold';
+    src: url("../Assents/Gotham\ Bold\ Regular.ttf") format('truetype');
+}
 
 *{
     padding: 0;
@@ -7,7 +28,11 @@
     box-sizing: border-box;
     overflow-x: hidden !important;
     touch-action: pan-y !important;
+    scroll-behavior: smooth !important;
+   
+    
 }
+
 .input{
     outline: none;
     object-fit: contain;
@@ -21,6 +46,10 @@
   padding: 2px;
 
 }
+.input:placeholder-shown{
+    font-family: 'Gotham-ligth' !important;
+    text-align: center;
+}
 .input2{
     
     width: 314px ;
@@ -29,13 +58,14 @@
     border-radius: 1px;
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color:rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color:rgba(0, 0, 0, 0.41);
     color: white;
     font-size: 12px;
   padding: 2px;
 }
 .input2:placeholder-shown{
+    font-family: 'Gotham-ligth' !important;
     text-align: center;
 }
 .input3{
@@ -51,10 +81,13 @@
     color: white;
     font-size: 12px;
   padding: 2px;
+  justify-content: start !important;
+ 
 }
 .input3:placeholder-shown{
-   
-    text-align: center;
+    font-family: 'Gotham-ligth' !important;
+   align-items: center !important;
+    
 }
 .inputf{
     outline: none;
@@ -69,6 +102,7 @@
 
 }
 .inputf:placeholder-shown{
+    font-family: 'Gotham-ligth' !important;
     text-align: center;
 }
 .inputf2{
@@ -85,6 +119,7 @@
   padding: 2px;
 }
 .inputf2:placeholder-shown{
+    font-family: 'Gotham-ligth' !important;
     text-align: center;
 }
 .inputf3{
@@ -101,20 +136,23 @@
   padding: 2px;
 }
 .inputf3:placeholder-shown{
+    font-family: 'Gotham-ligth' !important;
     text-align: center;
 }
 .btnHeader{
     width: 314px;
     height: 30px;
-   
+    
+     font-family: 'Gotham-medium' !important;
   
   
     background-color: #fff;
 }
 .btnfooter{
+
     width: 250px !important;
     height: 30px;
-   
+      font-family: 'Gotham-medium' !important;
   
   
 
@@ -296,22 +334,59 @@ text-align: center !important;
 
 @media(min-width: 315px){
     body{
-        width: 322px !important;
+        width: 342px !important;
+        scroll-behavior: smooth !important;
     }
     .containertitlemenu{
+        margin-top: 1% !important;
+    
         padding-left: 15px !important;
+    }
+    .containertiltemenu2{
+        min-width: 80px !important;
+        margin-top: 1% !important;
+      
     }
     .titlemenu{
         font-size: 5px !important;
     }
     .logoheader{
-        margin-top: 5% !important;
-        padding-left: 10% !important;
-        width: 70px !important;
-        height: 30px  !important;
+         
+        overflow: hidden !important;
+        margin-left: 25% !important;
+        margin-top: 15% !important;
+        width: 50px !important;
+        height: 20px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.1);
+        
+    }
+    .titlelogoheader{
+        position: absolute;
+        top: 25% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #fff;
+      
     }
     .containertitleheader{
         margin-left: -40% !important;
+    }
+    .titleheader{
+        font-family: "Gotham-medium" !important;
+    } 
+    .subtitleheader{
+        font-family: "Gotham-ligth" !important;
     }
     .boxsubtitle{
         width: 550px  !important;
@@ -322,7 +397,7 @@ text-align: center !important;
         font-size: 8px !important;
     }
     .containerinput{
-        padding-left: 0 !important;
+        padding-left: 2px !important;
     }
     /*body1*/
 
@@ -337,17 +412,317 @@ text-align: center !important;
         padding-left: 7% !important;
     }
     .Boxsubtitlebody1{
-        margin-left: -7% !important;
+        margin-left: -6% !important;
     }
     .subtitlebody1{
-        font-size: 12px !important;
+        font-family: "Gotham-ligth" !important;
+        font-size: 11px !important;
+    }
+    .subtitle2body1{
+        
+        font-family: "Gotham-ligth" !important;
+        font-size: 11px !important;
     }
     
     .containerimgbody1{
         margin-top: 5% !important;
         padding-left: 0 !important;
-        margin-left: 6% !important;
+        margin-left: 7% !important;
         
+}
+.bgimg{
+       
+    height: 120px !important;
+    width: 70px !important;
+    overflow:  hidden !important ;
+    cursor:pointer;
+    border: solid 1px #fff;
+    border-radius: 9px;
+   
+
+}
+.bgimganimation{
+    height: 120px !important;
+    width: 70px !important;
+    border: solid 1px #fff;
+    border-radius: 9px;
+  position: absolute;
+ left: 37.6% !important;
+    transition: ease !important;
+    animation-name: img1 ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes img1 {
+    
+    to{
+      transform:translateX(-150%);
+      opacity: 1;
+    }
+}
+.titleanimation{
+    margin-left: -8% !important;
+    position: absolute;
+    top: 30%;
+    font-size: 10px !important;
+    font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.14;
+letter-spacing: normal;
+text-align: center;
+color: #fff;
+}
+.subtitleanimation{
+    
+    max-width: 70px;
+    margin-top: 65% !important;
+    margin-left: -2% !important;
+     object-fit: contain;
+     font-family: Gotham;
+     font-size: 5px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.33;
+     letter-spacing: normal;
+     text-align: center;
+     color: #fff;
+}
+
+
+
+
+.bgimg2{
+    display: none !important;
+    height: 120px !important;
+    width: 70px !important;
+    overflow:  hidden !important ;
+    cursor:pointer;
+    
+     
+
+}
+.bgimganimation2{
+    height: 120px !important;
+    width: 70px !important;
+    border: solid 2px #fff;
+    border-radius: 14px;
+  position: absolute;
+ left: 37.6%;
+    transition: ease !important;
+    animation-name: img2 ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.titleanimation2{
+    margin-left: 0% !important;
+    position: absolute;
+    top: 40%;
+    font-size: 9.5px !important;
+    object-fit: contain;
+    font-family: Gotham;
+  
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+@keyframes img2 {
+    
+    to{
+      transform:translateX(-40%);
+      opacity: 1;
+    }
+}
+.subtitleanimation2{
+    max-width: 70px;
+    margin-top: 65% !important;
+    margin-left: -3% !important;
+     object-fit: contain;
+     font-family: Gotham;
+     font-size: 5px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 1.33;
+     letter-spacing: normal;
+     text-align: center;
+     color: #fff;
+}
+
+.bgimg3{
+    display: none !important;
+    height: 120px !important;
+    width: 70px !important;
+    overflow:  hidden !important ;
+    cursor:pointer;
+   
+
+}
+.bgimganimation3{
+    height: 120px !important;
+    width: 70px !important;
+    border: solid 2px #fff;
+    border-radius: 14px;
+  position: absolute;
+ left: 37.6% !important;
+    transition: ease !important;
+    animation-name: img3 ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes img3{
+    
+    to{
+      transform:translateX(70%);
+      opacity: 1;
+    }
+}
+.titleanimation3{
+    margin-left: -9% !important;
+    position: absolute;
+    
+    top: 40%;
+    font-size: 10px !important;
+    font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.14;
+letter-spacing: normal;
+text-align: center;
+color: #fff;
+}
+
+.bgimg4{
+    display: none !important;
+    height: 120px !important;
+    width: 70px !important;
+    overflow:  hidden !important ;
+    cursor:pointer;
+   
+
+}
+.bgimganimation4{
+    height: 120px !important;
+    width: 70px !important;
+    border: solid 2px #fff;
+    border-radius: 14px;
+  position: absolute;
+ left: 37.6% !important;
+    transition: ease !important;
+    animation-name: img4 ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes img4{
+    
+    to{
+      transform:translateX(180%);
+    
+    }
+
+
+
+}
+.titleanimation4{
+    max-width: 70px;
+    margin-top: 65% !important;
+    margin-left: 25% !important;
+    position: absolute;
+    
+    top: 5%;
+    font-size: 9px !important;
+    
+    object-fit: contain;
+    
+    
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+.subtitleanimation5{
+  
+    max-width: 70px;
+    margin-top: 70% !important;
+    margin-left: -3% !important;
+    object-fit: contain;
+    font-family: Gotham;
+    font-size: 5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+.titleanimation5{
+    width: 150px !important;
+    margin-left: -60% !important;
+    position: absolute;
+    
+    top: 50%;
+    font-size: 8px !important;
+    margin: 0 11px 16px;
+    object-fit: contain;
+    
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+.titleanimation{
+    margin-top: 2% !important;
+}
+
+.lineaimation{
+    left: 4% !important;
+     position: absolute;
+     width: 70px !important;
+    transition: ease !important;
+    animation-name: lineup ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.lineaimation2{
+    width: 70px !important;
+    position: absolute;
+    right: 2% !important;
+    transition: ease !important;
+    animation-name: lineup ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes lineup {
+    
+    to{
+      transform: translateY(-50px);
+      opacity: 0 ;
+    }
+}
+
+.imgnone{
+    display: none !important;
 }
 .backgroundbody1{
     width: 100px;
@@ -356,14 +731,14 @@ height: 150px;
 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 4, 34, 0.65));
 }
 .titlebgbody1{
-    margin-left: 20% !important;
+    margin-left: 5% !important;
     margin-top: 10% !important;
-       font-size: 8px ;
+       font-size: 7px ;
 }
 .imgbody1{
-    height: 40px !important;
-    width: 40px !important;
-    margin-top: 60% !important;
+    height: 20px !important;
+    width: 20px !important;
+    margin-top: 50% !important;
     margin-left: 30% !important;
 }
   
@@ -459,8 +834,11 @@ width: 70px !important;
           margin-top: -10% !important;
       }
       .boximgbody3{
-          padding-left: 15% !important;
+          padding-left: -0% !important;
           padding-top: 35% !important;
+      }
+      .estudantes{
+          height: 120px !important;
       }
       .line1body3{
         margin-top: 15% !important;
@@ -516,6 +894,10 @@ width: 70px !important;
         width: 170px;
         opacity: 0.5;
     }
+    .quadrado{
+        width: 180px !important;
+        margin-left: 2% !important;
+    }
    /* body 4*/
     .bgbody4{
         display: block !important;
@@ -549,23 +931,51 @@ width: 70px !important;
 @media(min-width: 358px){
 
     body{
-        width: 362px !important;
+        width: 382px !important;
     }
     .containertitlemenu{
-        padding-left: 15px !important;
+        padding-left: 20px !important;
+    }
+      .containertiltemenu2{
+          min-width: 110px !important;
+        
     }
     .titlemenu{
         font-size: 6px !important;
     }
 
-.logoheader{
-    margin-top: 5% !important;
-    padding-left: 10% !important;
-    width: 70px !important;
-    height: 30px  !important;
-}
+    .logoheader{
+         
+        overflow: hidden !important;
+        margin-left: 25% !important;
+        margin-top: 10% !important;
+        width: 70px !important;
+        height: 20px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.1);
+        
+    }
+    .titlelogoheader{
+        position: absolute;
+        top: 25% !important;
+        left: 10% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center !important;
+        color: #fff;
+      
+    }
     .containertitleheader{
-        margin-left: -40% !important;
+        margin-left: -32% !important;
     }
     .boxsubtitle{
         width: 550px  !important;
@@ -576,7 +986,7 @@ width: 70px !important;
         font-size: 9px !important;
     }
     .containerinput{
-        padding-left: 3% !important;
+        padding-left: 6% !important;
     }
 
      /*body1*/
@@ -601,7 +1011,7 @@ width: 70px !important;
     .containerimgbody1{
         margin-top: 5% !important;
         padding-left: 0 !important;
-        margin-left: 6% !important;
+        margin-left: 7% !important;
     }
   
     .line1{
@@ -687,7 +1097,7 @@ width: 70px !important;
           margin-top: -10% !important;
       }
       .boximgbody3{
-          padding-left: 15% !important;
+          padding-left: 0% !important;
           padding-top: 35% !important;
       }
       .line1body3{
@@ -756,8 +1166,10 @@ width: 70px !important;
     .containerinputbody4{
         padding-left: 10% !important; ;
     }
+
+
     .box1titlefooter{
-        padding-left: 10px !important;
+        padding-left: 30px !important;
     }
     .Titlefooter{
         font-size: 5px !important;
@@ -775,41 +1187,63 @@ width: 70px !important;
 @media(min-width: 368px){
 
     body{
-        width: 375px !important;
+        width: 385px !important;
         
     }
-    .logoheader{
-        margin-top: 5% !important;
-        padding-left: 10% !important;
-        width: 70px !important;
-        height: 30px  !important;
-    }
-    .containertitlemenu{
-        padding-left: 15px !important;
-    }
+   
 }
 @media(min-width: 410px){
 
     body{
-        width: 414px !important;
+        width: 444px !important;
     }
   
     .containertitlemenu{
         padding-left: 15px !important;
     }
+    
+    .containertitlemenu2{
+     min-width: 120px !important;
+    }
     .titlemenu{
         font-size: 8px !important;
     }
     .logoheader{
-        width: 100px !important;
-        height: 40px  !important;
+         
+        overflow: hidden !important;
+        margin-left: 15% !important;
+        margin-top: 10% !important;
+        width: 80px !important;
+        height: 25px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.1);
+        
+    }
+    .titlelogoheader{
+        position: absolute;
+        top: 28% !important;
+        left: 20% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #fff;
+      
     }
     .containertitleheader{
         margin-top: 5% !important;
         margin-left: 0% !important;
     }
     .titleheader{
-        margin-left: -0% !important;
+        margin-left: -26% !important;
         font-size: 18px !important;
     }
     .boxsubtitle{
@@ -869,8 +1303,8 @@ width: 70px !important;
       padding: 2px;
     }
     .input3:placeholder-shown{
-       
-        text-align: center;
+       text-justify:initial!important;
+     
     }
 
      /*body1*/
@@ -892,6 +1326,9 @@ width: 70px !important;
     .subtitlebody1{
         font-size: 13px !important;
     }
+    .subtitle2body1{
+        font-size: 13px !important;
+    }
     
     .containerimgbody1{
         margin-top: 2% !important;
@@ -899,9 +1336,293 @@ width: 70px !important;
         margin-left: 7% !important;
     }
     .bgimg{
-        height: 200px !important;
-        width: 140px !important;
+        height: 160px !important;
+        width: 100px !important;
     }
+    .bgimganimation{
+        height: 150px !important;
+        width: 85px !important;
+        border: solid 1px #fff;
+        border-radius: 9px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img1 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img1 {
+        
+        to{
+          transform:translateX(-150%);
+          opacity: 1;
+        }
+    }
+    .titleanimation{
+        margin-left: -9% !important;
+        position: absolute;
+        top: 30%;
+        font-size: 11px !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    .subtitleanimation{
+        
+        max-width: 85px;
+        margin-top: 55% !important;
+        margin-left: -2% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 6.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    
+    
+    
+    .bgimg2{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+        
+         
+    
+    }
+    .bgimganimation2{
+        height: 150px !important;
+        width: 85px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6%;
+        transition: ease !important;
+        animation-name: img2 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .titleanimation2{
+        margin-left: 6% !important;
+        position: absolute;
+        top: 40%;
+        font-size: 9.5px !important;
+        object-fit: contain;
+        font-family: "Gotham-medium" !important;
+      
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    @keyframes img2 {
+        
+        to{
+          transform:translateX(-40%);
+          opacity: 1;
+        }
+    }
+    .subtitleanimation2{
+        max-width: 80px;
+        margin-top: 55% !important;
+        margin-left: 0% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 5.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    .bgimg3{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation3{
+        height: 150px !important;
+        width: 85px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img3 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3{
+        
+        to{
+          transform:translateX(70%);
+          opacity: 1;
+        }
+    }
+    .titleanimation3{
+        margin-left: -9% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 40%;
+        font-size: 10px !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .bgimg4{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation4{
+        height: 150px !important;
+        width: 85px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img4 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4{
+        
+        to{
+          transform:translateX(180%);
+        
+        }
+    
+    
+    
+    }
+    .titleanimation4{
+        max-width: 70px;
+        margin-top: 65% !important;
+        margin-left: 25% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 5%;
+        font-size: 9px !important;
+        
+        object-fit: contain;
+        
+        
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .subtitleanimation5{
+      
+        max-width: 80px;
+        margin-top: 60% !important;
+        margin-left:0% !important;
+        object-fit: contain;
+        font-family: Gotham;
+        font-size: 5.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation5{
+        width: 150px !important;
+        margin-left: -45% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 50%;
+        font-size: 8px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation{
+        margin-top: 2% !important;
+    }
+    
+    .lineaimation{
+        left: 4% !important;
+         position: absolute;
+         width: 70px !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .lineaimation2{
+        width: 70px !important;
+        position: absolute;
+        right: 2% !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes lineup {
+        
+        to{
+          transform: translateY(-50px);
+          opacity: 0 ;
+        }
+    }
+    
+    .imgnone{
+        display: none !important;
+    }
+    
     .backgroundbody1{
         width: 140px;
     height: 200px;
@@ -909,15 +1630,16 @@ width: 70px !important;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 4, 34, 0.65));
     }
     .titlebgbody1{
-        margin-left: 20% !important;
+        font-family: 'Gotham-book' !important;
+        margin-left: 3% !important;
         margin-top: 10% !important;
-           font-size: 9px ;
+           font-size: 8.5px ;
     }
     .imgbody1{
         height: 40px !important;
         width: 40px !important;
         margin-top: 60% !important;
-        margin-left: 40% !important;
+        margin-left: 25% !important;
     }
   
     .line1{
@@ -994,6 +1716,7 @@ width: 70px !important;
     .subtitlebody2{
         font-size: 13px !important;
     }
+    
       /*body3*/
       .boxsubtitlebody3{
           margin-left: -8% !important;
@@ -1099,7 +1822,7 @@ width: 70px !important;
 @media(min-width: 535px){
 
     body{
-        width: 555px !important;
+        width: 575px !important;
     }
     .bgheader{
         height: 550px !important;
@@ -1169,7 +1892,8 @@ width: 70px !important;
         padding-left: 7% !important;
     }
     .Boxsubtitlebody1{
-        margin-left: 0% !important;
+        min-width: 500px !important;
+        margin-left: -3% !important;
     }
     
     .subtitlebody1{
@@ -1179,24 +1903,316 @@ width: 70px !important;
     .containerimgbody1{
         margin-top: 2% !important;
         padding-left: 0 !important;
-        margin-left: 6% !important;
+        margin-left: 7% !important;
     }
     .bgimg{
-        height: 220px !important;
-        width: 160px !important;
+        height: 160px !important;
+        width: 100px !important;
     }
-  
+    .bgimganimation{
+        height: 160px !important;
+        width: 100px !important;
+        border: solid 1px #fff;
+        border-radius: 9px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img1 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img1 {
+        
+        to{
+          transform:translateX(-150%);
+          opacity: 1;
+        }
+    }
+    .titleanimation{
+        margin-left: -4% !important;
+        position: absolute;
+        top: 35%;
+        font-size: 12px !important;
+        font-family: "Gotham-medium" !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    .subtitleanimation{
+      
+        max-width: 90px;
+        margin-top: 64% !important;
+        margin-left: 2% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 6.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    
+    
+    
+    .bgimg2{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+        
+         
+    
+    }
+    .bgimganimation2{
+        height: 160px !important;
+        width: 100px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6%;
+        transition: ease !important;
+        animation-name: img2 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .titleanimation2{
+        margin-left: 6% !important;
+        position: absolute;
+        top: 40%;
+        font-size: 10.5px !important;
+        object-fit: contain;
+        font-family: "Gotham-medium" !important;
+      
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    @keyframes img2 {
+        
+        to{
+          transform:translateX(-40%);
+          opacity: 1;
+        }
+    }
+    .subtitleanimation2{
+        max-width: 90px;
+        margin-top: 60% !important;
+        margin-left: 0% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 6.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    .bgimg3{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation3{
+        height: 160px !important;
+        width: 100px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img3 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3{
+        
+        to{
+          transform:translateX(70%);
+          opacity: 1;
+        }
+    }
+    .titleanimation3{
+        margin-left: -9% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 40%;
+        font-size: 11px !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .bgimg4{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation4{
+        height: 160px !important;
+        width: 100px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img4 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4{
+        
+        to{
+          transform:translateX(180%);
+        
+        }
+    
+    
+    
+    }
+    .titleanimation4{
+        max-width: 70px;
+        margin-top: 65% !important;
+        margin-left: 25% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 5%;
+        font-size: 10px !important;
+        
+        object-fit: contain;
+        
+        
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .subtitleanimation5{
+      
+        max-width: 90px;
+        margin-top: 66% !important;
+        margin-left:0% !important;
+        object-fit: contain;
+        font-family: 'Gotham-ligth' !important;
+        font-size: 6.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation5{
+        width: 150px !important;
+        margin-left: -30% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 51%;
+        font-size: 10px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation{
+        margin-top: 2% !important;
+    }
+    
+    .lineaimation{
+        left: 6% !important;
+         position: absolute;
+         width: 120px !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .lineaimation2{
+        width: 120px !important;
+        position: absolute;
+        right: 6% !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes lineup {
+        
+        to{
+          transform: translateY(-50px);
+          opacity: 0 ;
+        }
+    }
+    
+    .imgnone{
+        display: none !important;
+    }
+  .imgbody1{
+      height: 30px !important;
+      width: 30px !important;
+      margin-left: 27% !important;
+  }
+  .titlebgbody1{
+      font-size: 10px !important;
+      margin-left: 2% !important;
+  }
     .line1{
         left: 6% !important;
-       margin-top: 25% !important;
+       margin-top: 15% !important;
         position: absolute;
-width: 90px !important;
+width: 120px !important;
     }
     .line2{
         right: 6% !important;
-        margin-top: 25% !important;
+        margin-top: 15% !important;
         position: absolute;
-width: 90px !important;
+width: 120px !important;
 
     }
       /*body2*/
@@ -1408,22 +2424,46 @@ width: 90px !important;
     }
     .containertitlemenu{
         margin-top: 2% !important;
-        padding-left: 20px !important;
+        padding-left: 40px !important;
     }
     .containertiltemenu2{
+        min-width: 140px !important;
         margin-top: 2% !important;
     }
     .titlemenu{
-        font-size: 21px !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 20px !important;
     }
+
     .logoheader{
-        margin-top: 5% !important;
-        padding-left: 10% !important;
-        width: 120px !important;
-        height: 50px  !important;
+         
+        overflow: hidden !important;
+        margin-left: 15% !important;
+        margin-top: 10% !important;
+        width: 100px !important;
+        height: 35px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.1);
+        
     }
-    .containertiltemenu2{
-        padding-left: 0 !important;
+    .titlelogoheader{
+        position: absolute;
+        top: 28% !important;
+        left: 20% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 9px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #fff;
+      
     }
     .containertitleheader{
         margin-top: 5% !important;
@@ -1490,23 +2530,310 @@ width: 90px !important;
         width: 200px !important;
     }
     .Boxsubtitlebody1{
-        width: 500px !important;
-        margin-left: 1% !important;
+        min-width: 700px !important;
+        margin-left: -1.8% !important;
         margin-top: 1% !important;
     }
     
     .subtitlebody1{
         font-size: 22px !important;
     }
+    .subtitle2body1{
+        font-size: 22px !important;
+    }
     
     .containerimgbody1{
-        margin-top: 0% !important;
+        margin-top: 3% !important;
         padding-left: 0 !important;
-        margin-left: 6% !important;
+        margin-left: 7.5% !important;
     }
     .bgimg{
-        height: 370px !important;
-        width: 240px !important;
+        height: 260px !important;
+        width: 140px !important;
+    }
+    .bgimganimation{
+        height: 260px !important;
+        width: 140px !important;
+        border: solid 1px #fff;
+        border-radius: 9px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img1 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img1 {
+        
+        to{
+          transform:translateX(-150%);
+          opacity: 1;
+        }
+    }
+    .titleanimation{
+        margin-left: -4% !important;
+        position: absolute;
+        top: 35%;
+        font-size: 15px !important;
+        font-family: "Gotham-medium" !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    .subtitleanimation{
+      
+        max-width: 120px;
+        margin-top: 34% !important;
+        margin-left: 2% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 9.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    
+    
+    
+    .bgimg2{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+        
+         
+    
+    }
+    .bgimganimation2{
+        height: 260px !important;
+        width: 140px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6%;
+        transition: ease !important;
+        animation-name: img2 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .titleanimation2{
+        margin-left: 7% !important;
+        position: absolute;
+        top: 40%;
+        font-size: 15.5px !important;
+        object-fit: contain;
+        font-family: "Gotham-medium" !important;
+      
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    @keyframes img2 {
+        
+        to{
+          transform:translateX(-40%);
+          opacity: 1;
+        }
+    }
+    .subtitleanimation2{
+        max-width: 110px;
+        margin-top: 33% !important;
+        margin-left: 3% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 9.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    .bgimg3{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation3{
+        height: 260px !important;
+        width: 140px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img3 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3{
+        
+        to{
+          transform:translateX(70%);
+          opacity: 1;
+        }
+    }
+    .titleanimation3{
+        margin-left: -9% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 40%;
+        font-size: 15px !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .bgimg4{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation4{
+        height: 260px !important;
+        width: 140px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img4 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4{
+        
+        to{
+          transform:translateX(180%);
+        
+        }
+    
+    
+    
+    }
+    .titleanimation4{
+        max-width: 70px;
+        margin-top: 65% !important;
+        margin-left: 25% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 5%;
+        font-size: 15px !important;
+        
+        object-fit: contain;
+        
+        
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .subtitleanimation5{
+      
+        max-width: 110px;
+        margin-top: 36% !important;
+        margin-left:3% !important;
+        object-fit: contain;
+        font-family: 'Gotham-ligth' !important;
+        font-size: 9.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation5{
+        width: 150px !important;
+        margin-left: -10% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 46%;
+        font-size: 14px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation{
+        margin-top: 2% !important;
+    }
+    
+    .lineaimation{
+        left: 6% !important;
+         position: absolute;
+         width: 120px !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .lineaimation2{
+        width: 120px !important;
+        position: absolute;
+        right: 6% !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes lineup {
+        
+        to{
+          transform: translateY(-50px);
+          opacity: 0 ;
+        }
+    }
+    
+    .imgnone{
+        display: none !important;
     }
     .backgroundbody1{
         width: 420px;
@@ -1515,15 +2842,16 @@ width: 90px !important;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 4, 34, 0.65));
     }
     .titlebgbody1{
-        margin-left: 15% !important;
-        margin-top: 10% !important;
-           font-size: 15px ;
+        margin-left: 4% !important;
+        margin-top: 5% !important;
+           font-size: 12px !important ;
+           font-family: 'Gotham-book' !important;
     }
     .imgbody1{
         height: 60px !important;
         width: 60px !important;
-        margin-top: 50% !important;
-        margin-left: 25% !important;
+        margin-top: 35% !important;
+        margin-left: 10% !important;
     }
   
     .line1{
@@ -1765,14 +3093,388 @@ width: 150px !important;
     margin-top: 2% !important;
 }
 }
+@media(min-width: 895px){
+    body{
+        width: 920px !important;
+    }
+    .bgheader{
+        width:920px !important;
+        height: 700px !important;
+    }
+    .containertitlemenu{
+        min-width: 200px !important;
+        margin-top: 3% !important;
+        padding-left: 6% !important;
+    }
+    .containertiltemenu2{
+        height: 100px !important;
+        min-width: 180px !important;
+        margin-top: 3% !important;
+        
+        overflow: hidden !important;
+    }
+    .titlemenu{
+        font-family: 'Segoe-light' !important;
+        font-size: 21px !important;
+        padding: 0 10px;
+    }
+    .containertitleheader{
+        margin-top: 2% !important;
+       
+    }
+    .titleheader{
+        font-family: 'Gotham-medium' !important;
+        font-size: 50px !important;
+        margin-left: 5% !important;
+    }
+    .boxsubtitle{
+        width: 850px  !important;
+        padding-left: 18% !important;
+        margin-left: 0% !important;
+        
+    }
+    .subtitleheader{
+        font-family: 'Gotham-ligth'  !important;
+        font-size: 20px !important;
+    }
+    .containerinput{
+        margin-top: 3% !important;
+        padding-left: 22% !important;
+    }
+
+    /*body1*/
+    .Boxsubtitlebody1{
+        width: 700px !important;
+        margin-left: 0% !important;
+        margin-top: 1% !important;
+    }
+    
+    .subtitlebody1{
+       
+  font-family: 'Gotham-ligth' !important;
+        min-width: 700px !important;
+        font-size: 22px !important;
+    }
+    .subtitle2body1{
+        font-family: 'Gotham-ligth' !important;
+        text-align: center !important;
+        min-width: 600px !important;
+        font-size: 22px !important;
+    }
+    
+    .containerimgbody1{
+        margin-top: 2% !important;
+        padding-left: 0 !important;
+        margin-left: 8% !important;
+    }
+    .titlebgbody1{
+        margin-left: 1% !important;
+        margin-top: 5% !important;
+           font-size: 18px ;
+    }
+    .imgbody1{
+
+        margin-top: 35% !important;
+        margin-left: 10% !important;
+    }
+    .imgbody1:hover{
+        transition-duration: 2s !important;
+        margin-top: 28%!important;
+       
+    }
+
+
+
+    /*body 2*/
+    .bgimgbody2{
+        width: 1450px !important;
+        height: 800px !important;
+    }
+    .fundo1{
+      position: absolute;
+      margin-top: -19.5% !important;
+      width: 1450px;
+    height: 50px;
+    
+    object-fit: contain;
+    background-image: linear-gradient(to bottom, #0b274e, rgba(11, 39, 78, 0));
+    }
+    
+    .fundo2{
+      position: absolute;
+      margin-top: 66.5% !important;
+      width: 1450px;
+    height: 50px;
+    transform: rotate(180deg);
+    object-fit: contain;
+    background-image: linear-gradient(to bottom, #0b274e, rgba(11, 39, 78, 0));
+    }
+    .ELipse{
+        margin-top: 10% !important;
+        position: absolute;
+        left: 20%;
+       
+        height: 250px;
+        width: 250px;
+    }
+    .bolwhite{
+        margin-top: 13% !important;
+        position: absolute;
+        left: 16%;
+       
+        height: 30px;
+        width: 30px;
+    }
+    .bolwhite2{
+        margin-top: 10% !important;
+        position: absolute;
+        left: 18% ;
+       
+        height: 20px;
+        width: 20px;
+    }
+    .bolwhite3{
+        margin-top: 35% !important;
+        position: absolute;
+        left: 45%;
+       
+        height: 30px;
+        width: 30px;
+    }
+    .boxtitlebody2{
+        padding-top: 5% !important;
+        padding-left: 20% !important;
+    }
+    .titlebody2{
+        font-family: 'Gotham-ligth' !important;
+        font-size: 40px !important;
+        object-fit: contain;
+        font-family: Gotham;
+        font-size: 72px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: normal;
+        
+        color: #fff;
+    }
+    .linedecoration{
+      margin-left: 0.5% !important;
+        margin-top: 5% !important;
+        
+    }
+    .linebody2{
+        width: 10px !important;
+        height: 200px !important;
+    }
+    .boxsubtitlebody2{
+        margin-top: 5% !important;
+        padding-left: 20% !important;
+    }
+    .subtitlebody2{
+        font-family: 'Gotham-book' !important;
+        font-size: 21px !important;
+    }
+
+    /*body3*/
+
+    .boximgbody3{
+        padding-left: 22% !important;
+        padding-top: 35% !important;
+    }
+    .estudantes{
+        width: 450px !important;
+        height: 300px !important;
+    }
+    .line1body3{
+      margin-top: 10% !important;
+      position: absolute;
+      left: 50% !important ;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 280px;
+      opacity: 0.5;
+  }
+  .line2body3{
+      margin-top: 13% !important;
+      position: absolute;
+      right: 11.5%;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 250px;
+      opacity: 0.5;
+  }
+  .line3{
+      margin-top: 16% !important;
+      position: absolute;
+      right: 12.5%;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 280px;
+      opacity: 0.5;
+  }
+  .line4{
+      margin-top: 2% !important;
+      position: absolute;
+      right: 10%;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 280px;
+      opacity: 0.5;
+  }
+  .line5{
+      margin-top: 5% !important;
+      position: absolute;
+      right: 9%;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 260px;
+      opacity: 0.5;
+  }
+  .line6{
+      margin-top: 8% !important;
+      position: absolute;
+      right: 5.5%;
+     background-color: rgb(235, 220, 220);
+      height: 1px;
+      width: 300px;
+      opacity: 0.5;
+  }
+  .line7{
+    margin-top: -29% !important;
+    position: absolute;
+    left: 0%;
+   background-color: rgb(235, 220, 220);
+    height: 1px;
+    width: 300px;
+    opacity: 0.5;
+  }
+  .quadrado{
+    margin-left: 12% !important;
+      margin-top: 17% !important;
+      width: 370px !important;
+      height: 290px !important;
+}
+.containertitlebody4{
+    width: 800px !important;
+   
+}
+.Boxtitlebody4{
+   min-width: 500px !important;
+}
+.titlebody4{
+    font-family: 'Gotham-bold' !important;
+   margin-top: 10% !important;
+    font-size: 32px !important;
+}
+.containerinputbody4{
+    Margin-left: -10% !important; ;
+    margin-top: 5% !important;
+}
+.box1titlefooter{
+    padding-left: 10px !important;
+}
+.inputf{
+    width: 220px !important;
+    height: 40px !important;
+}
+.boxinputf2{
+    width: 1000px  !important;
+}
+.inputf2{
+    width: 450px !important;
+    height: 40px !important;
+}
+.inputf3{
+    width: 450px !important;
+}
+.btnfooter{
+  width: 450px !important;
+  height: 40px !important;
+    font-size: 20px !important;
+}
+/*Footer*/
+.ContainerFooter{
+    height: 120px !important;
+}
+ .box1titlefooter{
+     margin-left: 0% !important;
+ }
+.Titlefooter{
+   font-family: 'Gotham-ligth' !important;
+    margin-top: 5% !important;
+  font-size: 13px !important;
+  line-height: 15px !important;
+}
+.box1titlefooter2{
+ 
+  padding-left:4% !important;
+  
+}
+.Titlefooter2{
+  font-family: 'Gotham-book' !important;
+  font-size: 15px !important;
+  
+}
+.imgfooter{
+  height: 15px!important;
+  width: 15px !important;
+}
+.borda{
+  padding-left: 10px !important;
+  padding-top: 10px !important;
+    width: 50px;
+    height: 50px;
+   overflow: hidden;
+   cursor: pointer;
+    border-radius: 3px;
+    border: solid 1px #ba2e3b;
+}
+.borda1{
+  margin-left: 2% !important;
+  margin-top: 1% !important;
+}
+.borda2{
+  margin-left: 1% !important;
+  margin-top: 1% !important;
+}
+.borda3{
+  margin-left: 1% !important;
+  margin-top: 1% !important;
+}
+.borda4{
+  margin-left: 1% !important;
+  margin-top: 1% !important;
+}
+.faceverm{
+ 
+  height: 25px;
+  width: 25px;
+}
+.instaverm{
+  height: 25px;
+  width: 25px;
+}
+.whatsverm{
+  height: 25px;
+  width: 25px;
+}
+.emailverm{
+  height: 25px;
+  width: 25px;
+  
+}
+
+}
 @media(min-width: 1023px){
     
     body{
-        width: 1035px !important;
+        width: 1135px !important;
     }
     .bgheader{
         height: 850px !important;
-        width: 1035px !important;
+        width: 1135px !important;
     }
     .containertitlemenu{
         margin-top: 2% !important;
@@ -1781,18 +3483,43 @@ width: 150px !important;
     .containertiltemenu2{
         margin-top: 2% !important;
         padding-left: 0 !important;
+        min-width: 160px !important;
     }
     .titlemenu{
         font-size: 26px !important;
     }
 
+    
     .logoheader{
-        margin-top: 5% !important;
-        padding-left: 10% !important;
-        width: 190px !important;
-        height: 70px  !important;
+         
+        overflow: hidden !important;
+        margin-left: 15% !important;
+        margin-top: 10% !important;
+        width: 130px !important;
+        height: 45px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(255, 255, 255, 0.1);
+        
     }
-   
+    .titlelogoheader{
+        position: absolute;
+        top: 25% !important;
+        left: 15% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 12px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #fff;
+      
+    }
     .containertitleheader{
         margin-top: 5% !important;
         margin-left: -10% !important;
@@ -1851,6 +3578,7 @@ width: 150px !important;
         padding-left: 4% !important;
     }
     .titlebody1{
+        font-family: 'Gotham-medium' !important;
         font-size: 42px !important;
     }
     .Boxquadradowhite{
@@ -1860,23 +3588,308 @@ width: 150px !important;
         width: 200px !important;
     }
     .Boxsubtitlebody1{
-        width: 500px !important;
-        margin-left: 2% !important;
+        min-width: 1000px !important;
+        margin-left: -1% !important;
         margin-top: 0.5% !important;
     }
     
     .subtitlebody1{
+        font-family: 'Gotham-ligth'!important;
         font-size: 22px !important;
     }
     
     .containerimgbody1{
-        margin-top: 0% !important;
+        margin-top: 2% !important;
         padding-left: 0 !important;
         margin-left: 7% !important;
     }
     .bgimg{
-        height: 370px !important;
-        width: 240px !important;
+        height: 360px !important;
+        width: 180px !important;
+    }
+    .bgimganimation{
+        height: 360px !important;
+        width: 180px !important;
+        border: solid 1px #fff;
+        border-radius: 9px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img1 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img1 {
+        
+        to{
+          transform:translateX(-150%);
+          opacity: 1;
+        }
+    }
+    .titleanimation{
+        margin-left: -4% !important;
+        position: absolute;
+        top: 35%;
+        font-size: 20px !important;
+        font-family: "Gotham-medium" !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    .subtitleanimation{
+   
+        max-width: 150px;
+        margin-top: 78% !important;
+        margin-left: 5% !important;
+         object-fit: contain;
+         font-family: 'Gotham-ligth' !important;
+         font-size: 12px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    
+    
+    
+    .bgimg2{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+        
+         
+    
+    }
+    .bgimganimation2{
+        height: 360px !important;
+        width: 180px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6%;
+        transition: ease !important;
+        animation-name: img2 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .titleanimation2{
+        margin-left: 7% !important;
+        position: absolute;
+        top: 40%;
+        font-size: 20px !important;
+        object-fit: contain;
+        font-family: "Gotham-medium" !important;
+      
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    @keyframes img2 {
+        
+        to{
+          transform:translateX(-40%);
+          opacity: 1;
+        }
+    }
+    .subtitleanimation2{
+        max-width: 150px;
+        margin-top: 78% !important;
+        margin-left: 3% !important;
+         object-fit: contain;
+         font-family: 'Gotham-ligth' !important;
+         font-size: 12px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+    
+    .bgimg3{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation3{
+        height: 360px !important;
+        width: 180px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img3 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3{
+        
+        to{
+          transform:translateX(70%);
+          opacity: 1;
+        }
+    }
+    .titleanimation3{
+        margin-left: -9% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 40%;
+        font-size: 20px !important;
+        font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    }
+    
+    .bgimg4{
+        display: none !important;
+        height: 120px !important;
+        width: 70px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation4{
+        height: 360px !important;
+        width: 180px !important;
+        border: solid 2px #fff;
+        border-radius: 14px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img4 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4{
+        
+        to{
+          transform:translateX(180%);
+        
+        }
+    
+    
+    
+    }
+    .titleanimation4{
+        max-width: 70px;
+        margin-top: 65% !important;
+        margin-left: 25% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 5%;
+        font-size: 20px !important;
+        
+        object-fit: contain;
+        
+        
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .subtitleanimation5{
+      
+        max-width: 150px;
+        margin-top: 80% !important;
+        margin-left:3% !important;
+        object-fit: contain;
+        font-family: 'Gotham-ligth' !important;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation5{
+        width: 150px !important;
+        margin-left: -10% !important;
+        position: absolute;
+        font-family: 'Gotham-medium' !important;
+        top: 46%;
+        font-size: 14px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation{
+        margin-top: 2% !important;
+    }
+    
+    .lineaimation{
+        left: 6% !important;
+         position: absolute;
+         width: 120px !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .lineaimation2{
+        width: 120px !important;
+        position: absolute;
+        right: 6% !important;
+        transition: ease !important;
+        animation-name: lineup ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes lineup {
+        
+        to{
+          transform: translateY(-50px);
+          opacity: 0 ;
+        }
+    }
+    
+    .imgnone{
+        display: none !important;
     }
     .backgroundbody1{
         width: 240px;
@@ -1885,7 +3898,8 @@ width: 150px !important;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 4, 34, 0.65));
     }
     .titlebgbody1{
-        margin-left: 25% !important;
+        font-family: 'Gotham-book' !important;
+        margin-left: 13% !important;
         margin-top: 10% !important;
            font-size: 15px ;
     }
@@ -1893,7 +3907,7 @@ width: 150px !important;
         height: 60px !important;
         width: 60px !important;
         margin-top: 100% !important;
-        margin-left: 40% !important;
+        margin-left: 25% !important;
     }
   
     .line1{
@@ -2174,44 +4188,75 @@ width: 250px !important;
 @media(min-width: 1263px){
     
     body{
-        width: 1320px !important;
+        width: 1420px !important;
     }
     .bgheader{
-        height: 850px !important;
-        width: 1320px !important;
+        height: 900px !important;
+        width: 1480px !important;
     }
     .containertitlemenu{
-        margin-top: 2% !important;
-        padding-left: 5% !important;
+        min-width: 200px !important;
+        margin-top: 3% !important;
+        padding-left: 6% !important;
     }
     .containertiltemenu2{
-        margin-top: 2% !important;
+        height: 100px !important;
+        min-width: 250px !important;
+        margin-top: 3% !important;
+        
+        overflow: hidden !important;
     }
     .titlemenu{
-        font-size: 30px !important;
-        padding: 0 8px;
+        font-family: 'Segoe-light' !important;
+        font-size: 25px !important;
+        padding: 0 30px;
     }
     .logoheader{
-        width: 250px !important;
-        height: 120px  !important;
+         
+        overflow: hidden !important;
+        margin-left: 15% !important;
+        margin-top: 5% !important;
+        width: 180px !important;
+        height: 60px  !important;
+        object-fit: contain;
+        border-radius: 11px;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        border: solid 1px rgba(255, 255, 255, 0.59);
+        background-color: rgba(0, 0, 0, 0.1);
         
-            margin-top: -5% !important;
+    }
+    .titlelogoheader{
+        position: absolute;
+        top: 15% !important;
+        font-family: 'segoe-ui-light-2' !important;
+        font-size: 22px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic !important;
+        line-height: 2;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: #fff;
+      
     }
     .containertitleheader{
-        margin-top: 5% !important;
-        margin-left: -5% !important;
+        margin-top: 2% !important;
+       
     }
     .titleheader{
-        font-size: 40px !important;
+        font-family: 'Gotham-medium' !important;
+        font-size: 60px !important;
+        margin-left: 5% !important;
     }
     .boxsubtitle{
         width: 850px  !important;
         padding-left: 18% !important;
-        margin-left: 10% !important;
+        margin-left: 15% !important;
         
     }
     .subtitleheader{
-        
+        font-family: 'Gotham-ligth'  !important;
         font-size: 20px !important;
     }
     .containerinput{
@@ -2252,25 +4297,44 @@ width: 250px !important;
         height: 800px !important;
     }
     .boxtitlebody{
-        padding-left: 5% !important;
+        height: 90px !important;
+        padding-left: 2.5% !important;
     }
     .titlebody1{
+        font-family: 'Gotham-medium' !important;
         font-size: 42px !important;
+       
+  font-weight: 300;
+ 
+  letter-spacing: 10px;
+  line-height: 1.72;
+  word-spacing: 35px;
+  color: #fff;
     }
     .Boxquadradowhite{
-        margin-top: 0.5% !important ;
+        margin-top: 0% !important ;
         padding-left: 7% !important;
     }
     .quadradowhite{
         width: 200px !important;
+        height: 30px !important;
     }
     .Boxsubtitlebody1{
-        width: 600px !important;
-        margin-left: 3% !important;
-        margin-top: 0.5% !important;
+        width: 1150px !important;
+        margin-left: -0.5% !important;
+        margin-top: 1% !important;
     }
     
     .subtitlebody1{
+       
+  font-family: 'Gotham-ligth' !important;
+        min-width: 950px !important;
+        font-size: 25px !important;
+    }
+    .subtitle2body1{
+        font-family: 'Gotham-ligth' !important;
+        text-align: center !important;
+        min-width: 950px !important;
         font-size: 25px !important;
     }
     
@@ -2280,13 +4344,268 @@ width: 250px !important;
         margin-left: 7% !important;
     }
     .bgimg{
-        height: 370px !important;
-        width: 240px !important;
+       
+        height: 320px !important;
+        width: 200px !important;
         overflow:  hidden !important ;
         cursor:pointer;
+        border: solid 4px #fff;
+        border-radius: 24px;
+       
+    
     }
+    .bgimganimation{
+        height: 320px !important;
+        width: 200px !important;
+        border: solid 4px #fff;
+        border-radius: 24px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img1 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img1 {
+        
+        to{
+          transform:translateX(-140%);
+          opacity: 1;
+        }
+    }
+    .titleanimation{
+        margin-left: -12% !important;
+        position: absolute;
+        top: 35%;
+        font-size: 20px !important;
+        font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+    }
+    .subtitleanimation{
+        max-width: 150px;
+        margin-top: -18% !important;
+        margin-left: -2% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 13.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+  
+
+    
+  
+    .bgimg2{
+        display: none !important;
+        height: 320px !important;
+        width: 200px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+        
+         
+    
+    }
+    .bgimganimation2{
+        height: 320px !important;
+        width: 200px !important;
+        border: solid 4px #fff;
+        border-radius: 24px;
+      position: absolute;
+     left: 37.6%;
+        transition: ease !important;
+        animation-name: img2 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .titleanimation2{
+        margin-left: 0% !important;
+        position: absolute;
+        top: 40%;
+        font-size: 20px !important;
+        object-fit: contain;
+        font-family: Gotham;
+      
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    @keyframes img2 {
+        
+        to{
+          transform:translateX(-20%);
+          opacity: 1;
+        }
+    }
+    .subtitleanimation2{
+        max-width: 150px;
+        margin-top: -20% !important;
+        margin-left: -5% !important;
+         object-fit: contain;
+         font-family: Gotham;
+         font-size: 13.5px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #fff;
+    }
+  
+    .bgimg3{
+        display: none !important;
+        height: 320px !important;
+        
+        width: 200px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation3{
+        height: 320px !important;
+        width: 200px !important;
+        border: solid 4px #fff;
+        border-radius: 24px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img3 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img3{
+        
+        to{
+          transform:translateX(90%);
+          opacity: 1;
+        }
+    }
+    .titleanimation3{
+        margin-left: -16% !important;
+        position: absolute;
+        
+        top: 40%;
+        font-size: 22px !important;
+        font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+    }
+  
+    .bgimg4{
+        display: none !important;
+        height: 320px !important;
+        width: 200px !important;
+        overflow:  hidden !important ;
+        cursor:pointer;
+       
+    
+    }
+    .bgimganimation4{
+        height: 320px !important;
+        width: 200px !important;
+        border: solid 4px #fff;
+        border-radius: 24px;
+      position: absolute;
+     left: 37.6% !important;
+        transition: ease !important;
+        animation-name: img4 ;
+        overflow:  hidden !important ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img4{
+        
+        to{
+          transform:translateX(200%);
+        
+        }
+    
+  
+   
+    }
+    .titleanimation4{
+        width: 150px !important;
+        margin-left: -5% !important;
+        position: absolute;
+        
+        top: 40%;
+        font-size: 22px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .subtitleanimation5{
+        max-width: 150px;
+       margin-top: -10% !important;
+       margin-left: -5% !important;
+        object-fit: contain;
+        font-family: Gotham;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation5{
+        width: 150px !important;
+        margin-left: -5% !important;
+        position: absolute;
+        
+        top: 48%;
+        font-size: 22px !important;
+        margin: 0 11px 16px;
+        object-fit: contain;
+        
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+    }
+    .titleanimation{
+        margin-top: 2% !important;
+    }
+  
+  
     .backgroundbody1{
-        width: 282px;
+        width: 282px ;
   height: 466px;
   padding: 202px 29px 31px;
   object-fit: contain;
@@ -2294,38 +4613,77 @@ width: 250px !important;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 4, 34, 0.65));
     }
     .titlebgbody1{
-        margin-left: 10% !important;
+        margin-left: -5% !important;
         margin-top: 10% !important;
            font-size: 18px ;
     }
     .imgbody1{
-        margin-top: 10% !important;
-        margin-left: 30% !important;
+
+        margin-top: -10% !important;
+        margin-left: 20% !important;
+    }
+    .imgbody1:hover{
+        transition-duration: 1s !important;
+        margin-top: -20% !important;
+    }
+    .imgnone{
+        display: none !important;
     }
   
     .line1{
-        left: 6% !important;
-       margin-top: 15% !important;
-        position: absolute;
-width: 250px !important;
+       
+       margin-top: 5% !important;
+     
+width: 300px !important;
     }
     .line2{
-        right: 8% !important;
-        margin-top: 15% !important;
-        position: absolute;
-width: 250px !important;
+      
+        margin-top: 5% !important;
+      
+width: 300px !important;
+
+}
+.lineaimation{
+    left: 6% !important;
+     position: absolute;
+     width: 250px !important;
+    transition: ease !important;
+    animation-name: lineup ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.lineaimation2{
+    width: 250px !important;
+    position: absolute;
+    right: 8% !important;
+    transition: ease !important;
+    animation-name: lineup ;
+    overflow:  hidden !important ;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes lineup {
+    
+    to{
+      transform: translateY(-200px);
+      opacity: 0 ;
+    }
+    
+
 
 }
 
       /*body2*/
       .bgimgbody2{
-          width: 1320px !important;
+          width: 1490px !important;
         height: 700px !important;
     }
     .fundo1{
       position: absolute;
-      margin-top: -9.5% !important;
-      width: 1320px;
+      margin-top: -15.5% !important;
+      width: 1420px;
     height: 40px;
    
     object-fit: contain;
@@ -2334,80 +4692,112 @@ width: 250px !important;
   
   .fundo2{
       position: absolute;
-      margin-top: 42.5% !important;
-      width: 1320px;
+      margin-top: 36.9% !important;
+      width: 1420px;
     height: 30px;
    transform: rotate(180deg);
     object-fit: contain;
     background-image: linear-gradient(to bottom, #0b274e, rgba(11, 39, 78, 0));
   }
   .ELipse{
-      margin-top: 15% !important;
+      margin-top: 10% !important;
       position: absolute;
-      left: 10%;
+      left: 20%;
      
       height: 250px;
       width: 250px;
   }
   .bolwhite{
-      margin-top: 17% !important;
+      margin-top: 13% !important;
       position: absolute;
-      left: 5%;
+      left: 16%;
      
       height: 30px;
       width: 30px;
   }
   .bolwhite2{
-      margin-top: 12% !important;
+      margin-top: 10% !important;
       position: absolute;
-      left: 12% ;
+      left: 18% ;
      
       height: 20px;
       width: 20px;
   }
   .bolwhite3{
-      margin-top: 31% !important;
+      margin-top: 28% !important;
       position: absolute;
-      left: 30%;
+      left: 35%;
      
       height: 30px;
       width: 30px;
   }
   .boxtitlebody2{
+      padding-top: 5% !important;
       padding-left: 30% !important;
   }
   .titlebody2{
-      font-size: 38px !important;
+      font-family: 'Gotham-ligth' !important;
+      font-size: 52px !important;
+      object-fit: contain;
+      font-family: Gotham;
+      font-size: 72px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      
+      color: #fff;
   }
   .linedecoration{
+    margin-left: 0.5% !important;
       margin-top: 5% !important;
       
   }
+  .linebody2{
+      width: 10px !important;
+      height: 300px !important;
+  }
   .boxsubtitlebody2{
       margin-top: 5% !important;
-      padding-left: 35% !important;
+      padding-left: 30% !important;
   }
   .subtitlebody2{
+      font-family: 'Gotham-book' !important;
       font-size: 30px !important;
   }
     /*body3*/
     .containerbody3{
-        height: 500px !important;
+        height: 600px !important;
     }
     .boxsubtitlebody3{
-        margin-left: -3% !important;
+        max-width: 900px !important;
+        margin-left: 5% !important;
     }
     .boxtitlebody3{
-
-      margin-left: -5% !important;
+        max-width: 900px !important;
+      margin-left: 5% !important;
 
     }
     .titlebody3{
-        font-size: 32px !important;
+        font-family: 'Gotham-book' !important;
+        font-size: 34px !important;
     }
    
     .subtitlebody3{
-        font-size: 22px !important;
+        font-family: 'Gotham-book' !important;
+        min-width: 400px !important;
+        font-size: 20px !important;
+        object-fit: contain;
+       
+    
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
     }
     .boxlinebody3{
         margin-top: -10% !important;
@@ -2418,6 +4808,7 @@ width: 250px !important;
         padding-top: 25% !important;
     }
     .estudantes{
+        margin-left: 20% !important;
         width: 400px !important;
         height: 300px !important;
     }
@@ -2475,8 +4866,18 @@ width: 250px !important;
       width: 550px;
       opacity: 0.5;
   }
+  .line7{
+    margin-top: -17% !important;
+    position: absolute;
+    left: 4%;
+   background-color: rgb(235, 220, 220);
+    height: 1px;
+    width: 350px;
+    opacity: 0.5;
+  }
   .quadrado{
-      margin-top: 13% !important;
+      margin-left: 20% !important;
+      margin-top: 13.5% !important;
       width: 460px !important;
       height: 290px !important;
   }
@@ -2493,6 +4894,7 @@ width: 250px !important;
      width: 600px !important;
   }
   .titlebody4{
+      font-family: 'Gotham-bold' !important;
      margin-top: 10% !important;
       font-size: 42px !important;
   }
@@ -2530,7 +4932,7 @@ width: 250px !important;
        margin-left: 10% !important;
    }
   .Titlefooter{
-     
+     font-family: 'Gotham-ligth' !important;
       margin-top: 5% !important;
     font-size: 13px !important;
     line-height: 15px !important;
@@ -2541,6 +4943,7 @@ width: 250px !important;
     
 }
 .Titlefooter2{
+    font-family: 'Gotham-book' !important;
     font-size: 18px !important;
     
 }

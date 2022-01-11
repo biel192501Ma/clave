@@ -15,6 +15,8 @@ const Header = () =>{
     
 
     }
+ 
+   
    
    return(
       <Bgimg width={564} height={432} className="bgheader"  >
@@ -22,19 +24,24 @@ const Header = () =>{
           <Container row paddingLeft={50} paddingTop={15} className='containertitlemenu' >
 
             <Title className='titlemenu' size={10}  pointer >Home</Title>
-            <Title className='titlemenu' size={10} color="gray" pointer paddingLeft={15}>Metodologia</Title>
-            <Title className='titlemenu' size={10} color="gray" pointer paddingLeft={15} >Certificado</Title>
+            <Title onClick={()=> window.location.href='#metodologia'} className='titlemenu' size={10} color="gray" pointer paddingLeft={15}> Metodologia</Title>
+            <Title onClick={()=>  window.location.href='#certificado'}  className='titlemenu' size={10} color="gray" pointer paddingLeft={15} >Certificado</Title>
           </Container>
           <Box paddingLeft={9} className='containertiltemenu2' >
-            <img src={logo}  className='logoheader' />
+             
+
+            <div className='logoheader' >
+                <Title className='titlelogoheader' > Clever School</Title>
+           
+              </div>
               
 
               
           </Box>
           <Container row paddingTop={15}  className='containertiltemenu2' >
-          <Title className='titlemenu'  size={10} color="gray" pointer paddingLeft={15}  >Quem somos</Title>
-            <Title className='titlemenu' size={10} color="gray" pointer  paddingLeft={15} >Contato</Title>
-            <Title  className='titlemenu'size={10} color="gray" pointer  paddingLeft={15}  >Login</Title>
+          <Title onClick={()=>     window.location.href='#quemsomos'} className='titlemenu'  size={10} color="gray" pointer paddingLeft={15}  >Quem somos</Title>
+            <Title onClick={()=>     window.location.href='#contato'} className='titlemenu' size={10} color="gray" pointer  paddingLeft={15} >Contato</Title>
+            <Title onClick={()=>   window.location.href="https://student.flexge.com/"}  className='titlemenu'size={10} color="gray" pointer  paddingLeft={15}  >Login</Title>
 </Container>
        </MenuContainer>
       

@@ -20,7 +20,7 @@ return(
         </Box>
         </Container>
 
-        <Container data-aos="fade-right"  >
+        <Container  >
             {/*line*/}
             <Box className="boxlinebody3" >
             <div className="line1body3" ></div>
@@ -31,7 +31,7 @@ return(
             </Box  >
 
              {/*img*/}
-             <Box paddingLeft={50} paddingTop={120} className="boximgbody3"  >
+             <Box id="quemsomos" data-aos="fade-right"  paddingLeft={50} paddingTop={120} className="boximgbody3"  >
               <img src={Estudantes} className="estudantes" />
             </Box>
 
@@ -40,6 +40,7 @@ return(
            <div className="line4" ></div>
             <div className="line5" ></div>
             <div className="line6" ></div>
+            <div className="line7" ></div>
            </Box>
 
         </Container>
